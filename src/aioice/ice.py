@@ -668,7 +668,9 @@ class Connection:
 
         if pair.state == CandidatePair.State.SUCCEEDED:
             if pair.nominated:
-                self._nominated[pair.component] = pair
+                # Always choose the one with minimum RTT
+                if pair.component not in self._nominated:
+                    self._nominated[pair.component] = pair
 
                 # 8.1.2.  Updating States
                 #
