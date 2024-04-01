@@ -37,7 +37,7 @@ dev = [
 ]
 
 [project.urls]
-homepage = "https://github.com/aiortc/aioice"
+homepage = "https://github.com/CoLearn-Dev/aioice2"
 documentation = "https://aioice.readthedocs.io/"
 
 [tool.coverage.run]
